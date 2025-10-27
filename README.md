@@ -1,6 +1,6 @@
 Import-Module ActiveDirectory
 
-$targetUser = "colbyroot"  # Replace with the actual username
+$targetUser = "*UserName*"  # Replace with the actual username
 $computers = Get-ADComputer -Filter * -Property Name | Select-Object -ExpandProperty Name
 
 foreach ($computer in $computers) {
